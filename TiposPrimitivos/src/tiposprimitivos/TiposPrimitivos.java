@@ -21,21 +21,23 @@ public class TiposPrimitivos {
         Scanner teclado = new Scanner (System.in);
         
         String nome = teclado.nextLine();
+        int idadeUser = teclado.nextInt();
         float nota = new Float(teclado.nextFloat());
         float nota2 = teclado.nextFloat();
         float nota3 = (float) teclado.nextFloat();
         float nota4 = teclado.nextFloat();
         float media = new Float ((nota + nota2 + nota3 + nota4)/4);
-        
-        System.out.println("Aluno " + nome);
+                
+        System.out.println("Aluno " + nome + " com " + idadeUser + " anos de idade");
         System.out.printf("A sua nota do primeiro bimestre foi: %.2f\n", nota);
         System.out.printf("A nota do segundo: %.2f\n", nota2);
         System.out.printf("A nota do terceiro bimestre foi: %.2f \n", nota3);
         System.out.printf("A do quarto bimestre foi: %.2f\n", nota4);
         System.out.printf("Sua média %s, foi de: %.2f\n", nome, media);
         
-        String valor = Float.toString(media);
+        String valor = Integer.toString(idadeUser);
         System.out.println(valor);
+        int idade = Integer.parseInt(valor);
         
         
         // TODO code application logic here
