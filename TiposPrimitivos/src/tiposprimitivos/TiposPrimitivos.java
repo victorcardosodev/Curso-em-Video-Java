@@ -35,10 +35,6 @@ public class TiposPrimitivos {
         System.out.printf("A do quarto bimestre foi: %.2f\n", nota4);
         System.out.printf("Sua média %s, foi de: %.2f\n", nome, media);
         
-        String valor = Integer.toString(idadeUser);
-        System.out.println(valor);
-        int idade = Integer.parseInt(valor);
-        
         
         // TODO code application logic here
     }
